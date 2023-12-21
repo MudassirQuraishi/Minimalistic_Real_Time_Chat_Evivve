@@ -6,10 +6,10 @@
 ![App Screenshot](Public/assests/images/landing_page.png)
 
 ---
-
 ## Overview
+-   This project is a realtime chat application leveraging Node.js, Express, Mongoose and MongoDB for database storage, with JWT for secure authentication, and Socket.io for real-time  chat experience. It enables instant messaging between users and utilzie technologies for a seamless chat experience.
 
-This project is a real-time chat application leveraging Node.js, Express, Mongoose, and MongoDB for database storage, with JWT for secure authentication. It enables instant messaging between users and utilizes various technologies for a seamless chat experience.
+
 ---
 ## Features
 
@@ -70,6 +70,15 @@ Ensure the following are installed:
    ```
 
 2. Access the application at `http://localhost:3000`.
+
+3. **Accessing the HTML file:**
+   - Open a web browser (Chrome, Firefox, etc.).
+   - In the browser's address bar, enter the following URL:
+
+```
+/your_path_to_this_folder/Public/HTML/login.html
+```
+
 ---
 ## API Documentation  
 
