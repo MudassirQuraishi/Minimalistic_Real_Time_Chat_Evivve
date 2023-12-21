@@ -209,16 +209,6 @@ message-area
     overflow: hidden;
     min-height: calc(100% - 1rem);
 }
-
-.chatlist {
-    outline: 0;
-    height: 100%;
-    overflow: hidden;
-    width: 300px;
-    float: left;
-    padding: 15px;
-}
-
 .chat-area .modal-content {
     border: none;
     border-radius: 0;
@@ -314,45 +304,6 @@ a.add img {
     border-color: transparent transparent #000;
     isolation: isolate;
 }
-
-.chat-list h3 {
-    color: #222;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    text-transform: capitalize;
-    margin-bottom: 0;
-}
-
-.chat-list p {
-    color: #343434;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.5;
-    text-transform: capitalize;
-    margin-bottom: 0;
-}
-
-.chat-list a.d-flex {
-    margin-bottom: 15px;
-    position: relative;
-    text-decoration: none;
-}
-
-.chat-list .active {
-    display: block;
-    content: "";
-    clear: both;
-    position: absolute;
-    bottom: 3px;
-    left: 34px;
-    height: 12px;
-    width: 12px;
-    background: #00db75;
-    border-radius: 50%;
-    border: 2px solid #fff;
-}
-
 .msg-head h3 {
     color: #222;
     font-size: 18px;
@@ -416,23 +367,6 @@ a.add img {
     position: relative;
 }
 
-/* .msg-body ul li.received:before {
-    display: block;
-    clear: both;
-    content: "";
-    position: absolute;
-    top: -6px;
-    left: -7px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 12px 15px 12px;
-    border-color: transparent transparent #f5f5f5 transparent;
-    -webkit-transform: rotate(-37deg);
-    -ms-transform: rotate(-37deg);
-    transform: rotate(-37deg);
-} */
-
 .msg-body ul li.received p {
     color: #000;
     font-size: 14px;
@@ -461,23 +395,6 @@ a.add img {
     text-align: right;
     position: relative;
 }
-
-/* .msg-body ul li.replied:before {
-    display: block;
-    clear: both;
-    content: "";
-    position: absolute;
-    bottom: 15px;
-    right: -7px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 12px 15px 12px;
-    border-color: transparent transparent #4b7bec transparent;
-    -webkit-transform: rotate(37deg);
-    -ms-transform: rotate(37deg);
-    transform: rotate(37deg);
-} */
 
 .msg-body ul li.replied p {
     color: #fff;
