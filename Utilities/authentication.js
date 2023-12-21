@@ -58,9 +58,24 @@ async function authenticateSocket(token) {
         console.error("Error in authentication:", error);
     }
 }
+async function authenticateSocketToken(socket, next) {
+    try {
+        const token = socket.handshake.auth.token;
+        const secretKey = process.env.JWT_SECRET_KEY;
+        const { userId } = jwt.verify(token, secretKey);
+        const user = await User.findOne({ _id: userId });
+        if (user) {
+            socket.user = user;
+            next();
+        } else {
+            console.log("User not found");
+        }
+    } catch (error) {}
+}
 
 module.exports = {
     generateAuthToken,
     authenticateSocket,
     authenticateToken,
+    authenticateSocketToken,
 };
